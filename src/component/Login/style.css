@@ -1,0 +1,59 @@
+form {
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    /* background: rgba(233, 233, 233, 0.488); */
+    border: 1px solid maroon;
+    border-radius: 7px;
+    width: 25%;
+    margin-left: 40%;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+
+    
+
+
+/* width: 40%;
+height: 100%;
+display: flex;
+flex-direction: column;
+margin-right: 9rem;
+margin-top: 5rem;
+padding: 0px 10px;
+border: 1px solid #c9c9c9;
+border-radius: 7px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+form h5 {
+    margin-left: 25%;
+    color: maroon;
+}
+
+form h1 {
+    margin-left: 35%;
+    color: maroon;
+
+}
+input {
+    margin-top: 1.6rem;
+    margin-left: 20%;
+    padding: 1rem 2rem;
+    border: 1px solid maroon;
+    display: block;
+    /* display: block;
+    margin: 10% 27%; */
+}
+input:focus {
+outline: 1px transparent;
+}
+
+a {
+    color: maroon;
+
+}
+
+.btn {
+    background-color: maroon;
+    color: white;
+}
+

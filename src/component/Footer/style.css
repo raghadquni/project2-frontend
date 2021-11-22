@@ -1,0 +1,53 @@
+.Footer {
+  bottom: 0;
+  overflow: scroll;
+  width: 100%;
+  z-index: 10;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: fixed;
+  background: rgba(128, 128, 128, 0.091);
+  padding: 0.8rem 0.5rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: -1rem;
+}
+
+.ulFot {
+  margin-left: 48%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  /* justify-content: center;
+  margin-left: -1rem;
+  margin-right: -1rem; */
+  width: 100%;
+}
+
+p {
+    margin: 0;
+  margin-left: 40%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  /* justify-content: center;
+  margin-left: -1rem;
+  margin-right: -1rem; */
+}
+
+.Footer li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;
+}
+
+.Footer a {
+    padding: 1rem 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    /* text-transform: uppercase; */
+    display: block;
+    /* border-bottom: 2px solid #262626; */
+}
