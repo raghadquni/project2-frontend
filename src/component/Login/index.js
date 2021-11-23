@@ -11,12 +11,17 @@ const Login = () => {
   const [password, setPassword] = useState("");
 
 useEffect(() => {
-    getAllUsers();
-  }, []);
+    if(JSON.parse(localStorage.getItem("User"))) {
+      navigate("/")
+    } else {
+      getAllUsers();
+    }
+  }, [email]);
 
 const getAllUsers = async () => {
     const users = await axios.get(`${BASE_URL}/users/allUser`);
     setUsers(users.data);
+
   };
 
 
@@ -24,26 +29,41 @@ const getAllUsers = async () => {
     e.preventDefault();
 
 
-    let check = true;
+    let check = false;
     users.map((item) => {
       if (item.email === email && item.password === password) {
-        check = false;
+        check = true;
       }
     });
     if (check) {
-      alert( "The email or password is incorrect" );
-    } else
-    try {
-      axios.post(`${BASE_URL}/users/user` , {
-        email: email,
-        password: password,
-      });
-      navigate("/");
-    } catch (error) {
-      console.log(error);
-    }
+      try {
+        navigate("/");
+        localStorage.setItem("User", JSON.stringify({ email }));
+        console.log("your in " , email);
+      } catch (error) {
+            console.log(error);
+          }
+        } else {
+          alert( "The email or password is incorrect" );
+        }
+      }
+
+  //     alert( "The email or password is incorrect" );
+  //   } else
+  //   try {
+  //     axios.get(`${BASE_URL}/users/user` , {
+  //       email: email,
+  //       password: password,
+  //     });
+  //     navigate("/");
+  //     localStorage.setItem("userId", JSON.stringify(found._id));
+  //           console.log("your in ");
+  //           window.location.reload(false);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
   
-  }
+  // }
 
   return (
     <>

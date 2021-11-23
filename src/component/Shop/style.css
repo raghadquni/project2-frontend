@@ -1,0 +1,31 @@
+.allProduct {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 6rem;
+  }
+  
+  .allProduct:hover {
+    cursor: pointer;
+  }
+  
+  .all {
+    width: 200px;
+    height: 310px;
+    margin: 15px;
+    padding-bottom: 150px;
+    transition: 0.5s ease;
+    align-items: center;
+  }
+  
+  .allProduct div:hover {
+    transform: scale(1.04) perspective(0.1px);
+  }
+  
+  .allProduct div img {
+    margin-top: 30px;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+  }
