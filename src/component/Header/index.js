@@ -43,9 +43,7 @@ const Header = () => {
         <li className={splitLocation[1] === "" ? "active" : ""}>
           <Link to="/Support">Support</Link>{" "}
         </li>
-        <li className={splitLocation[1] === "" ? "active" : ""}>
-          <Link to="/Support">Support</Link>{" "}
-        </li>
+       
         {!logged && (
           <>
             <li className={splitLocation[1] === "" ? "active" : ""}>

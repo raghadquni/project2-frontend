@@ -34,8 +34,8 @@ const Shop = () => {
                   inside(item._id);
                 }}>
                 <img className="proImg" src={item.productImg} alt="proImg" />
-                <h4> {item.productName} </h4>
-                <h4> {item.price} SR </h4>
+                <h5> {item.productName} </h5>
+                <h5> {item.price} SR </h5>
               </div>
             </div>
           );
