@@ -34,6 +34,8 @@ const Header = () => {
           </li>
         </ul>
       </div> */}
+
+      
       <ul className="ulNav">
         <li className={splitLocation[1] === "" ? "active" : ""}>
           <Link to="/">Home</Link>{" "}
