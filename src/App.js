@@ -11,6 +11,11 @@ import Shop from "./component/Shop";
 import SignUp from "./component/SignUp";
 import StorePolicies from "./component/StorePolicies";
 import Support from "./component/Support";
+import OneProduct from "./component/OneProduct"
+import Shoes from "./component/Shoes"
+import Tops from "./component/Tops"
+
+
 
 
 import './App.css';
@@ -29,6 +34,11 @@ function App() {
     <Route exact path="/SignUp" element={<SignUp />} />
     <Route exact path="/StorePolicies" element={<StorePolicies />} />
     <Route exact path="/Support" element={<Support />} />
+    <Route exact path="/OneProduct/:id" element={<OneProduct />} />
+    <Route exact path="/Shoes" element={<Shoes />} />
+    <Route exact path="/Tops" element={<Tops />} />
+
+    {/* <Route exact path="/LogOut" element={<LogOut />} /> */}
     </Routes>
     <Footer />
 

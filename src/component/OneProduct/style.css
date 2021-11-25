@@ -1,0 +1,17 @@
+.product {
+    
+}
+
+.proImg {
+    margin-top: 8rem;
+    width: 40%;
+    height: 65vh;
+    /* background-image: url("../Images/MANGO2.jpeg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: black;
+    opacity: 1;
+    
+
+  }

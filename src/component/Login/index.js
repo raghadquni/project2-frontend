@@ -13,6 +13,7 @@ const Login = () => {
 useEffect(() => {
     if(JSON.parse(localStorage.getItem("User"))) {
       navigate("/")
+      window.location.reload(false)
     } else {
       getAllUsers();
     }
@@ -47,23 +48,6 @@ const getAllUsers = async () => {
           alert( "The email or password is incorrect" );
         }
       }
-
-  //     alert( "The email or password is incorrect" );
-  //   } else
-  //   try {
-  //     axios.get(`${BASE_URL}/users/user` , {
-  //       email: email,
-  //       password: password,
-  //     });
-  //     navigate("/");
-  //     localStorage.setItem("userId", JSON.stringify(found._id));
-  //           console.log("your in ");
-  //           window.location.reload(false);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  
-  // }
 
   return (
     <>

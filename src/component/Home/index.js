@@ -5,11 +5,23 @@ import { RiTShirt2Line } from "react-icons/ri";
 import { GiSkirt } from "react-icons/gi";
 import { GiHighHeel } from "react-icons/gi";
 import { GiDress } from "react-icons/gi";
+// import slider from "react-slick"
+// import "slick-carousel/slick/slick.css"
+
+ 
 
 
 import "./style.css";
+import Slider from "react-slick";
 
 const Home = () => {
+  // let settings = {
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1
+  // };
   return (
     <>
       <div className="banner">
@@ -22,17 +34,20 @@ const Home = () => {
 
       <div className="categories">
         <ul className="cato">
-          
+        
           <li>
             <Link to="/Tops">
               <RiTShirt2Line className="cat"/>
             </Link>
           </li>
-          <li>
+          
+          <li> 
             <Link to="/BottomClothes">
               <GiSkirt className="cat"/>
             </Link>
           </li>
+         
+          
           <li>
             <Link to="/Shoes">
               <GiHighHeel className="cat"/>
@@ -43,6 +58,7 @@ const Home = () => {
               <GiDress className="cat"/>
             </Link>
           </li>
+          
         </ul>
       </div>
     </>
