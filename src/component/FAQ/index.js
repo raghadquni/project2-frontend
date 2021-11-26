@@ -47,6 +47,13 @@ Soon, more payment methods will be available. </h4>
 <h4 class="hiddendiv"> No, not if you order from our store. </h4>
 
 </div>
+
+<div className="allQ">
+<h3 class="clicker" tabindex="1"> Is it possible to add other products to order with the possibility of their arrival at the same time? </h3>
+<h4 class="hiddendiv"> When the order is confirmed, you cannot add any other products, but you can add a new order. </h4>
+
+</div>
+
   </>
   )
 };
