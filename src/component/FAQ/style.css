@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=EB+Garamond&family=Tajawal:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=EB+Garamond&family=Montserrat:wght@200&family=Source+Sans+Pro:wght@200&family=Tajawal:wght@300&display=swap');
+h1 {
+    margin-top: 12rem;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: normal;
+    margin-bottom: 6rem;
+
+}
+
+.allQ {
+    text-align: center;
+    margin-top: 2rem;
+    margin-right: 6rem;
+    margin-left: 6rem;
+
+}
+
+.clicker {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: normal;
+    width:100%;
+    outline:none;
+    cursor:pointer;
+
+    
+    }
+    
+    .hiddendiv{
+    display:none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    }
+    
+    .clicker:focus + .hiddendiv{
+    display:inline ;
+    }
