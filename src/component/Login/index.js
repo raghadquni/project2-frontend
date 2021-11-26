@@ -12,8 +12,8 @@ const Login = () => {
 
 useEffect(() => {
     if(JSON.parse(localStorage.getItem("User"))) {
+     
       navigate("/")
-      window.location.reload(false)
     } else {
       getAllUsers();
     }

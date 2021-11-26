@@ -14,6 +14,8 @@ import Support from "./component/Support";
 import OneProduct from "./component/OneProduct"
 import Shoes from "./component/Shoes"
 import Tops from "./component/Tops"
+import BottomClothes from "./component/BottomClothes"
+import Dress from "./component/Dress"
 
 
 
@@ -37,6 +39,9 @@ function App() {
     <Route exact path="/OneProduct/:id" element={<OneProduct />} />
     <Route exact path="/Shoes" element={<Shoes />} />
     <Route exact path="/Tops" element={<Tops />} />
+    <Route exact path="/BottomClothes" element={<BottomClothes />} />
+    <Route exact path="/Dress" element={<Dress />} />
+
 
     {/* <Route exact path="/LogOut" element={<LogOut />} /> */}
     </Routes>

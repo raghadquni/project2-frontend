@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router";
 import { RiShoppingBagLine } from "react-icons/ri";
+import { BiLogIn } from "react-icons/bi";
 import "./style.css";
+
 
 const Header = () => {
   const location = useLocation();
@@ -11,6 +13,7 @@ const Header = () => {
   const [logged, setlogged] = useState(false);
 
   useEffect(() => {
+    console.log(JSON.parse(localStorage.getItem("User")),"logged user");
     if (JSON.parse(localStorage.getItem("User"))) {
       setlogged(true);
     }
@@ -27,14 +30,7 @@ const Header = () => {
 
   return (
     <div className="nav">
-      {/* <div>
-        <ul>
-          <li>
-          <h1>AR</h1>
-          </li>
-        </ul>
-      </div> */}
-
+     
       
       <ul className="ulNav">
         <li className={splitLocation[1] === "" ? "active" : ""}>
@@ -69,19 +65,23 @@ const Header = () => {
 
         {logged && (
           <>
-          <Link to = "/">
-            <li onClick={LOGOUT}> LOGOUT </li>
-            </Link>
-            <li className={splitLocation[1] === "" ? "active" : ""}>
-              <Link to="/UserProfile">Profile</Link>
-            </li>
-          </>
-        )}
-        <li>
+          <li>
           <Link to="/Cart">
-            <RiShoppingBagLine />
+            <RiShoppingBagLine size={22} />
           </Link>
         </li>
+            <li className="logOuut" onClick={LOGOUT}>
+            <Link to = "/">
+            <BiLogIn size={23}/> LogOut
+            </Link>
+             </li>
+           
+            {/* <li className={splitLocation[1] === "" ? "active" : ""}>
+              <Link to="/UserProfile">Profile</Link>
+            </li> */}
+          </>
+        )}
+        
       </ul>
     </div>
   );

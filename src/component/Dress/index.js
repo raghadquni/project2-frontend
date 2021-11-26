@@ -6,7 +6,7 @@ import "./style.css";
 const BASE_URL = "http://localhost:5000";
 // const type = "TOPS"
 
-const Tops = () => {
+const Dress = () => {
   const navigate = useNavigate();
   const [products, setProduct] = useState([]);
 
@@ -18,7 +18,8 @@ const Tops = () => {
 
 
   const getcatgoProduct = async () => {
-    const products = await axios.get(`${BASE_URL}/products/categ/tops`);
+    const products = await axios.get(`${BASE_URL}/products/categ/dress`);
+    console.log(products.data);
     setProduct(products.data);
   };
 
@@ -27,7 +28,6 @@ const Tops = () => {
     console.log(id);
     navigate(`/OneProduct/${id}`);
   };
-
 
   return (
     <>
@@ -50,5 +50,4 @@ const Tops = () => {
     </>
   );
 };
-
-export default Tops;
+export default Dress;

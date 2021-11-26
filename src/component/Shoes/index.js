@@ -26,7 +26,7 @@ const Shoes = () => {
 
   const inside = (id) => {
     console.log(id);
-    navigate(`/product`);
+    navigate(`/OneProduct/${id}`);
   };
 
   return (

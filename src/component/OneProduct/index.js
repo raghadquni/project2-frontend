@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 import "./style.css";
 
 const BASE_URL = "http://localhost:5000";
@@ -27,8 +28,14 @@ const OneProduct = () => {
         console.log(id,"id");
        await axios.put(`http://localhost:5000/users/cart/${user.email}/${id}`);
         getUSerFromLocal();
-        alert('ADDED TO YOUR CART')
-      };
+        Swal.fire({
+            position: 'top-center',
+            icon: 'success',
+            title: 'Success',
+            showConfirmButton: false,
+            timer: 2000
+      });
+    }
 
 
 
