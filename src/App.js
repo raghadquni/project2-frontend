@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Route, Routes } from "react-router-dom";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
@@ -23,13 +23,22 @@ import Dress from "./component/Dress"
 import './App.css';
 
 function App() {
+  const [logged, setlogged] = useState(false);
+
+
+  const checkUser = () => {
+    if (JSON.parse(localStorage.getItem("User"))?.email) {
+      setlogged(true);
+    }
+  }
+
   return (
     <>
-    <Header />
+    <Header logged={logged} checkUser={checkUser}/>
     <Routes>
     <Route exact path="/" element={<Home />} />
     <Route exact path="/Cart" element={<Cart />} />
-    <Route exact path="/Login" element={<Login />} />
+    <Route exact path="/Login" element={<Login checkUser={checkUser}/>} />
     <Route exact path="/FAQ" element={<FAQ />} />
     <Route exact path="/NewCollection" element={<NewCollection />} />
     <Route exact path="/Shop" element={<Shop />} />

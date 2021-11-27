@@ -1,8 +1,8 @@
-form {
-    margin-top: 7rem;
+.form {
+    margin-top: 10rem;
     margin-bottom: 4rem;
     /* background: rgba(233, 233, 233, 0.488); */
-    border: 1px solid maroon;
+    border: 1px  black;
     border-radius: 7px;
     width: 25%;
     margin-left: 40%;
@@ -24,21 +24,27 @@ border-radius: 7px;
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 
-form h5 {
-    margin-left: 25%;
-    color: maroon;
+.acc {
+    margin-left: 13%;
+    color: black;
 }
 
-form h1 {
-    margin-left: 35%;
-    color: maroon;
+.loog {
+    display: inline;
+    /* margin-right: 10rem; */
+    margin-top: 0;
+    align-items: center;
+    /* margin-left: 39%; */
+    color: black;
+    margin-left: 34%;
+
 
 }
-input {
-    margin-top: 1.6rem;
-    margin-left: 20%;
-    padding: 1rem 2rem;
-    border: 1px solid maroon;
+.inpuut1 {
+    margin-top: 0.3rem;
+    margin-left: 13%;
+    padding: 1rem 5rem;
+    border: 1px solid black;
     display: block;
     /* display: block;
     margin: 10% 27%; */
@@ -52,8 +58,21 @@ a {
 
 }
 
-.btn {
-    background-color: maroon;
-    color: white;
+.btn11 {
+    margin-top: 2rem;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    padding: 1rem 3rem;
+    margin-left: 37%;
 }
 
+.Enter {
+    margin-right: 7rem;
+
+}
+
+.Enter2 {
+    margin-right: 5rem;
+
+}

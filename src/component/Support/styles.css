@@ -1,0 +1,96 @@
+h1 {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: normal;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    margin-left: 4rem;
+    margin-top: 9rem;
+}
+
+h3 {
+    margin-left: 10rem;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 3rem;
+
+}
+
+/* 
+form {
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    /* background: rgba(233, 233, 233, 0.488); */
+    /* border-radius: 7px;
+    width: 25%;
+    margin-left: 40%;
+    border: 1px  black;
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 2rem; */
+
+    
+
+
+/* width: 40%;
+height: 100%;
+display: flex;
+flex-direction: column;
+margin-right: 9rem;
+margin-top: 5rem;
+padding: 0px 10px;
+border: 1px solid #c9c9c9;
+border-radius: 7px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+/* } */ 
+
+form h5 {
+    margin-left: 25%;
+    color: maroon;
+}
+
+form h1 {
+    margin-left: 35%;
+    color: maroon;
+
+}
+.inpuut {
+    margin-top: 2.2rem;
+    margin-left: 41%;
+    padding: 1rem 6rem;
+    display: block;
+    border: none;
+    border-bottom: 0.5px solid black;
+    outline: 1px  white;
+    /* display: block;
+    margin: 10% 27%; */
+}
+
+.inpuut:focus {
+outline: 1px solid black;
+
+}
+
+.btn {
+    margin-top: 2rem;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    padding: 1rem 3rem;
+    margin-left: 48%;
+}
+
+
+textarea {
+    margin-top: 2.4rem;
+    margin-left: 38.3%;
+    resize: none;
+    width: 400px;
+    height: 150px;
+    
+
+}
+
+textarea:hover , textarea:focus{
+    outline: 1px solid white;
+}

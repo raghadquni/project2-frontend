@@ -15,6 +15,7 @@ import "./style.css";
 import Slider from "react-slick";
 
 const Home = () => {
+  
   // let settings = {
   //   dots: false,
   //   infinite: true,

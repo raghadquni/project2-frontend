@@ -54,28 +54,28 @@ const SignUp = () => {
   return (
     <>
     <div className = "RegBox">
-      <form onSubmit={ckeck}>
-      <h1> Register </h1>
-        <input
+      <form className="form1" onSubmit={ckeck}>
+      <h1 className="reg"> Register </h1>
+      <h4 className="Enter0"> Enter your Email: </h4>
+        <input className="inp22"
           type="text"
           name="username"
-          placeholder="username"
           onChange={(e) => setUsername(e.target.value)}
         />
-        <input
+        <h4 className="Enter11"> Enter your Email: </h4>
+        <input className="inp22"
           type="email"
           name="email"
-          placeholder="email"
           onChange={(e) => setEmail(e.target.value)}
         />
-        <input
+        <h4 className="Enter22"> Enter your password: </h4>
+        <input className="inp22"
           type="password"
           name="password"
-          placeholder="password"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <input className="btn" type="submit" value="Register" />
-        <h5>Already have an account? <Link to="/Login">Login</Link>   </h5>   
+        <input className="btn12" type="submit" value="Register" />
+        <h5 className="acc1">Already have an account? <Link to="/Login">Login</Link>   </h5>   
         </form>
     </div>
     </>

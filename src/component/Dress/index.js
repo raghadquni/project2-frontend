@@ -31,15 +31,15 @@ const Dress = () => {
 
   return (
     <>
-    <div className="allTops">
+    <div className="allProduct">
         {products.map((item, i) => {
           return (
-            <div className="tops">
+            <div className="all">
               <div
                 onClick={() => {
                   inside(item._id);
                 }}>
-                <img className="topImg" src={item.productImg} alt="proImg" />
+                <img className="proImg" src={item.productImg} alt="proImg" />
                 <h5> {item.productName} </h5>
                 <h5> {item.price} SR </h5>
               </div>

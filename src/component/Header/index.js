@@ -6,18 +6,15 @@ import { BiLogIn } from "react-icons/bi";
 import "./style.css";
 
 
-const Header = () => {
+const Header = ({logged,checkUser}) => {
   const location = useLocation();
   const { pathname } = location;
   const splitLocation = pathname.split("/");
-  const [logged, setlogged] = useState(false);
+  // const [logged, setlogged] = useState(false);
 
   useEffect(() => {
-    console.log(JSON.parse(localStorage.getItem("User")),"logged user");
-    if (JSON.parse(localStorage.getItem("User"))) {
-      setlogged(true);
-    }
-  }, []);
+    checkUser()
+  });
 
   const navigate = useNavigate();
   

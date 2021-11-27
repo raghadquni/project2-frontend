@@ -1,3 +1,48 @@
 .topImg {
     margin: 5rem;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,300&family=Oswald:wght@200&family=Raleway:wght@100&display=swap');
+
+.allTops {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 8rem;
+  }
+  
+  .allTops:hover {
+    cursor: pointer;
+  }
+  
+  .tops {
+    width: 200px;
+    height: 310px;
+    margin: 15px;
+    padding-bottom: 150px;
+    transition: 0.5s ease;
+    align-items: center;
+    /* border: 1px solid black; */
+  }
+  
+  .allTops div:hover {
+    transform: scale(1.04) perspective(0.1px);
+  }
+  
+  .allTops div img {
+    max-width:1000%;
+  max-height:1000%;
+  margin-left: 0rem;
+    
+  }
+
+  h5 {
+      /* left: 0; */
+      /* margin-left: 4rem; */
+      font-family: 'Nunito', sans-serif;
+      text-align: center;
+      /* font-size: 0.6rem; */
+  }
+

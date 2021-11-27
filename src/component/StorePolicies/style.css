@@ -5,7 +5,6 @@ h1 {
     font-weight: normal;
     margin-bottom: 3rem;
     font-size: 3rem;
-
 }
 
 
@@ -15,22 +14,22 @@ h3 {
     margin-left: 6rem;
     text-align: center;
     font-family: "Josefin Sans", sans-serif;
-
-
 }
 
 h2 {
     text-align: center;
     margin-top: 4rem;
     font-size: 2rem;
+    margin-left: 3rem;
     font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 4rem;
 }
 
 
 .para {
     text-align: center;
     margin-right: 15rem;
-    margin-left: 15rem;
+    margin-left: 17rem;
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.7;
 

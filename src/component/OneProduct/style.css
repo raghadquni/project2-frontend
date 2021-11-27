@@ -1,17 +1,40 @@
+body {
+  margin: 60%;
+}
+
 .product {
     
 }
 
 .proImg {
-    margin-top: 8rem;
-    width: 40%;
-    height: 65vh;
-    /* background-image: url("../Images/MANGO2.jpeg"); */
+    /* margin-top: 8rem;
+    width: 65%;
+  
+    margin-left: 17%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: unset;
     background-color: black;
-    opacity: 1;
+    opacity: 1; */
     
+    max-width:30%;
+   margin-top: 8rem;
+  max-height:50%;
+  margin-left: 35%;
+
 
   }
+
+
+.product h5 {
+  font-size: 1rem;
+}
+
+.btnOne {
+  margin-left: 45%;
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 3rem;
+
+}
