@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import "./style.css";
+import Swal from "sweetalert2";
 
 const BASE_URL = "http://localhost:5000";
 
@@ -44,8 +45,11 @@ const SignUp = () => {
         console.log(error);
       }
     } else {
-      alert( "This email or username already have an account! log in!" );
-      
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'This email or username already have an account! log in!',
+      })
     }
   }
 

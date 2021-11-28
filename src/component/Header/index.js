@@ -30,6 +30,7 @@ const Header = ({logged,checkUser}) => {
      
       
       <ul className="ulNav">
+        <li className="loggo"> AR ForYou</li>
         <li className={splitLocation[1] === "" ? "active" : ""}>
           <Link to="/">Home</Link>{" "}
         </li>

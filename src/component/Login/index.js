@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./style.css";
+import Swal from "sweetalert2";
 
 const BASE_URL = "http://localhost:5000";
 
@@ -44,7 +45,11 @@ const Login = () => {
         console.log(error);
       }
     } else {
-      alert("The email or password is incorrect");
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'The email or password is incorrect',
+      })
     }
   };
 

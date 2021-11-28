@@ -57,8 +57,8 @@ const OneProduct = () => {
         <div className="product">
           <img className="proImg" src={product.productImg} alt="mmm" />
           <h5> {product.productName} </h5>
-          <h5> Description : {product.description} SR </h5>
-          <h5> {product.price} SR </h5>
+          <h5 className="des"> Description : {product.description} SR </h5>
+          <h4 className="price"> {product.price} SR </h4>
           <button className="btnOne" onClick={() => addtoCart(product._id)}> Add to Cart 
           
           </button>
