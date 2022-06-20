@@ -10,6 +10,7 @@ const Login = () => {
   let navigate = useNavigate();
   const [users, setUsers] = useState([]);
   const [email, setEmail] = useState("");
+  // eslint-disable-next-line
   const [loading, setLoading] = useState(true);
   const [password, setPassword] = useState("");
 
@@ -19,6 +20,7 @@ const Login = () => {
     } else {
       getAllUsers();
     }
+    // eslint-disable-next-line
   }, [email]);
 
   const getAllUsers = async () => {
@@ -31,6 +33,7 @@ const Login = () => {
     e.preventDefault();
 
     let check = false;
+    // eslint-disable-next-line
     users.map((item) => {
       if (item.email === email && item.password === password) {
         check = true;

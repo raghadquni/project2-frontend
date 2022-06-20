@@ -32,8 +32,10 @@ const Cart = () => {
 
   useEffect(() => {
     getProducts();
+    // eslint-disable-next-line
   }, [email]);
 
+  // eslint-disable-next-line
   const getproduct = (id) => {
     console.log(id);
     navigate(`/products/product`);
@@ -45,7 +47,7 @@ const Cart = () => {
     window.location.reload(false);
   };
 
-
+// eslint-disable-next-line
 const checOut = () => {
   navigate('/CheckOut')
 

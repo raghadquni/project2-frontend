@@ -1,28 +1,18 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import BannerImg1 from "../Images/MANGO2.jpeg";
 import { RiTShirt2Line } from "react-icons/ri";
 import { GiSkirt } from "react-icons/gi";
 import { GiHighHeel } from "react-icons/gi";
 import { GiDress } from "react-icons/gi";
-import { FcBusinesswoman } from "react-icons/fc";
-import { Icon } from '@iconify/react';
 import { BsTwitter } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 
 
 import "./style.css";
-import Slider from "react-slick";
 
 const Home = () => {
   
-  // let settings = {
-  //   dots: false,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1
-  // };
   return (
     <>
       <div className="banner">

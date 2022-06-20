@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import "./style.css";
 
@@ -42,12 +41,13 @@ const OneProduct = () => {
  
   useEffect(() => {
     getOneProdect();
+    // eslint-disable-next-line
   }, []);
 
   const getOneProdect = async () => {
     const product = await axios.get(`${BASE_URL}/products/allProduct`);
     console.log(product);
-
+// eslint-disable-next-line
     setProduct(product.data.find((elm) => elm._id == id));
   };
 
